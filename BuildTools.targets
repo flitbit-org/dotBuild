@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file prepares the build tools. It is used during command line execution as well
+	as during Visual Studio builds.
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">			
+	<PropertyGroup>
+		<BuildToolsDir>$(MSBuildThisFileDirectory.Trim('\\'))</BuildToolsDir>
+	</PropertyGroup>
+	
+	<Import Project="$(MSBuildThisFileDirectory)3rdParty\MSBuild Extension Pack 4.0.8.0 Binaries\MSBuild.ExtensionPack.tasks"/>
+	<Import Project="$(MSBuildThisFileDirectory)3rdParty\nuget\nuget.targets"/>
+	
+</Project>
