@@ -8,7 +8,5 @@
 		<BuildToolsDir>$(MSBuildThisFileDirectory.Trim('\\'))</BuildToolsDir>
 	</PropertyGroup>
 	
-	<Import Project="$(MSBuildThisFileDirectory)3rdParty\MSBuild Extension Pack 4.0.8.0 Binaries\MSBuild.ExtensionPack.tasks"/>
-	<Import Project="$(MSBuildThisFileDirectory)3rdParty\nuget\nuget.targets"/>
-	
+	<Import Project="$(BuildToolsDir)\3rdParty\MSBuild Extension Pack 4.0.8.0 Binaries\MSBuild.ExtensionPack.tasks"/>
 </Project>
